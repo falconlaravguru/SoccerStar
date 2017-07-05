@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table table-bordered">
+      <thead>
+        <tr>
+          <td>No</td>
+          <td>Name</td>
+          <td>Country</td>
+          <td>City</td>
+          <td>League</td>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor = "let club of Clubs; let index = index">
+              <td>{{index + 1}}</td>
+              <td>{{ club.name }}</td>
+              <td>{{ club.country}}</td>
+              <td>{{ club.city }}</td>
+              <td>{{ club.league }}</td>
+          </tr>
+      </tbody>
+  </table>
+  
+</div>

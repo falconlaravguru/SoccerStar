@@ -1,0 +1,32 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead class="table-header">
+            <tr>
+                <td>No</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Club</td>
+                <td>Role</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let player of players; let index = index">
+                <td>
+                    {{index + 1}}
+                </td>
+                <td>
+                    {{player.name}}
+                </td>
+                <td>
+                    {{player.age}}
+                </td>
+                <td>
+                    {{player.club}}
+                </td>
+                <td>
+                    {{player.role}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
